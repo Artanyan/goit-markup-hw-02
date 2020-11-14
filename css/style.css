@@ -1,0 +1,168 @@
+*{
+margin: 0;
+padding: 0;
+}
+ 
+ul {
+list-style: none;
+} 
+
+a {
+text-decoration: none;
+} 
+
+body {
+    font-family: Roboto;
+}
+
+:root{
+    --title-text-color:#212121;
+    --primary-text-color:#757575;
+    --hero-text-color:#ffffff;
+    --accent-text-color:#2196F3;
+}
+
+/* index.htlm стиль */
+
+/* Шапка страницы */
+
+.logo {
+    color: #2196F3;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2em;
+}
+
+.studio{
+    color: #000000;
+    
+}
+
+.nav-list a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    color: var(--title-text-color);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: var(--accent-text-color);
+} 
+
+.nav-contacts a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    color: var(--primary-text-color);
+}
+
+.nav-contacts a:hover,
+.nav-contacts a:focus {
+    color: var(--accent-text-color);
+} 
+
+/* Герой страницы */
+
+.hero-description{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;  
+    color: var(--hero-text-color);
+}
+
+.hero-button{
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: var(--accent-text-color);
+    color: var(--hero-text-color);
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87em;    
+}
+
+/* Организация работы */
+.hero{
+    background: #2F303A;
+}
+
+.about h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    color: var(--title-text-color);
+}
+
+.about p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71em;
+    color: var(--primary-text-color);
+}
+
+/* Деятельность */
+
+.activity h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16em;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+.team{
+    background: #F5F4FA;
+}
+
+.team h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16em;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.team-cards h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18em;
+    color: var(--title-text-color);
+}
+
+.team-cards p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18em;
+    color: var(--primary-text-color);
+}
+
+/* Подвал страницы */
+footer{
+    background: #2F303A;
+}
+
+.address-contacts p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-contacts a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-contacts a:hover,
+.address-contacts a:focus {
+    color: var(--accent-text-color);
+} 
+
+/* portfolio.html стиль */
+
