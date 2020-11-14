@@ -69,6 +69,7 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;  
+    text-align: center;
     color: var(--hero-text-color);
 }
 
@@ -166,3 +167,32 @@ footer{
 
 /* portfolio.html стиль */
 
+.title-project{
+    display : none;
+}
+
+.btn-project{
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #F5F4FA;
+    color: #212121;
+    padding: 4px 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62em;
+}
+
+.project-cards h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    color: var(--title-text-color);
+}
+
+.project-cards p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87em;
+    color: var(--primary-text-color)
+}
