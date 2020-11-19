@@ -12,7 +12,7 @@
     } 
     
     body {
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
     }
     
     :root{
@@ -20,6 +20,25 @@
         --primary-text-color:#757575;
         --hero-text-color:#ffffff;
         --accent-text-color:#2196F3;
+        /* Шапка страницы */
+        --logo-header-color:#2196F3;
+        --studio-header-color:#000000;
+        /* Герой страницы */
+        --hero-background-color:#2F303A;   
+        /* Наша команда */
+        --team-background-color:#F5F4FA;
+        /* Подвал страницы */
+        --footer-background-color:#2F303A;
+        --logo-footer-color:#2196F3;
+        --studio-footer-color:#ffffff;
+        --address-contacts-color:#ffffff;
+        --address-contacts-link-color:rgba(255, 255, 255, 0.6);
+        /* Портфолио */
+        --btn-project-text:#212121;
+        --btn-project-background:#F5F4FA;
+        --btn-project-hover:#ffffff;
+          
+
     }
     
     /* index.htlm стиль */
@@ -27,7 +46,7 @@
     /* Шапка страницы */
     
     .logo {
-        color: #2196F3;
+        color: var(--logo-header-color);
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
@@ -36,11 +55,11 @@
     }
     
     .studio{
-        color: #000000;
+        color:var(--studio-header-color);
         
     }
     
-    .nav-list a{
+    .nav-list .link{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14em;
@@ -48,8 +67,9 @@
         color: var(--title-text-color);
     }
     
-    .nav-list a:hover,
-    .nav-list a:focus {
+    .nav-list .link:hover,
+    .nav-list .link:focus,
+    .nav-list .link.current {
         color: var(--accent-text-color);
     } 
     
@@ -66,7 +86,7 @@
     .nav-contacts a:focus {
         color: var(--accent-text-color);
     } 
-    
+
     /* Герой страницы */
     
     .hero-description{
@@ -86,7 +106,6 @@
         border-radius: 5px;
         padding: 8px 16px;
 
-        font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87em; 
@@ -96,12 +115,13 @@
         background: var(--accent-text-color);
         color: var(--hero-text-color);
     }
-    
-    /* Организация работы */
+
     .hero{
-        background: #2F303A;
+        background:var(--hero-background-color);
     }
 
+    /* Организация работы */
+    
     .advantages{
         display: none;
     }
@@ -115,7 +135,6 @@
     }
     
     .about p{
-        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71em;
@@ -126,7 +145,6 @@
     /* Деятельность */
     
     .activity h2{
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16em;
@@ -137,11 +155,10 @@
     
     /* Наша команда */
     .team{
-        background: #F5F4FA;
+        background:var(--team-background-color);
     }
     
     .team h2{
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16em;
@@ -151,7 +168,6 @@
     }
     
     .team-cards h3{
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18em;
@@ -171,10 +187,10 @@
     
     /* Подвал страницы */
     footer{
-        background: #2F303A;
+        background: var(--footer-background-color);
     }
     .logo-footer {
-        color: #2196F3;
+        color: var(--logo-footer-color);
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
@@ -183,7 +199,7 @@
     }
     
     .studio-footer {
-        color: #ffffff;
+        color:var(--studio-footer-color);
         
     }
 
@@ -198,7 +214,7 @@
         line-height: 1.71em;
         letter-spacing: 0.03em;
 
-        color: #ffffff;
+        color:var(--address-contacts-color);
     }
     
     .address-contacts a{
@@ -207,7 +223,7 @@
         font-size: 14px;
         line-height: 1.71em;
         letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+        color:var(--address-contacts-link-color);
     }
     
     .address-contacts a:hover,
@@ -225,8 +241,8 @@
         appearance: none;
         border: 0;
         border-radius: 5px;
-        background: #F5F4FA;
-        color: #212121;
+        background: var(--btn-project-background);
+        color: var(--btn-project-text);
         padding: 4px 8px;
 
         font-style: normal;
@@ -236,9 +252,14 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
+
+    .btn-project:hover,
+    .btn-project:focus{
+        background-color: var(--accent-text-color);
+        color: var(--btn-project-hover);
+    }
     
     .project-cards h2{
-        font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 2em;
@@ -247,7 +268,6 @@
     }
     
     .project-cards p{
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87em;
